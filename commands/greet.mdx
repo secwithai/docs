@@ -1,0 +1,26 @@
+---
+title: Greet
+description: Configure greet messages for new members in specific channels.
+---
+
+## greet
+
+Configure greet messages for new members.
+
+**Syntax:** `greet <subcommand> [arguments]`  
+**Premium:** Elite
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| set | `greet set <#channel\|channelId> <autodel_seconds> {message}` | `greet set #general 10 {user} Welcome!` |
+| unset | `greet unset <#channel\|channelId>` | `greet unset #general` |
+| test | `greet test [#channel\|channelId]` | `greet test #general` |
+| autodel | `greet autodel <#channel\|channelId> <seconds>` | `greet autodel #general 15` |
+| list | `greet list` | `greet list` |
+
+### Notes
+
+- **autodel_seconds** — Number of seconds before the greet message is auto-deleted. Use `0` for no auto-delete.
+- Use `{user}` in your message to mention the new member.

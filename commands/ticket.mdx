@@ -1,0 +1,37 @@
+---
+title: Ticket
+description: Manage the ticket system for support requests.
+---
+
+## ticket
+
+Manage the ticket system.
+
+**Syntax:** `ticket <subcommand> [arguments]`  
+**Premium:** Pro
+
+### Panel commands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| setup | `ticket panel setup <name>` | `ticket panel setup support` |
+| enable | `ticket panel enable <name>` | Enable a panel |
+| disable | `ticket panel disable <name>` | Disable a panel |
+| reset | `ticket panel reset <name>` | Reset a panel |
+| list | `ticket panel list` | List all panels |
+
+### Member commands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| add | `ticket member add <@user\|userid>` | Add a member to the ticket |
+| remove | `ticket member remove <@user\|userid>` | Remove a member from the ticket |
+
+### Channel commands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| open | `ticket channel open` | Open a new ticket |
+| close | `ticket channel close` | Close the ticket |
+| delete | `ticket channel delete` | Delete the ticket |
+| rename | `ticket channel rename` | Rename the ticket |

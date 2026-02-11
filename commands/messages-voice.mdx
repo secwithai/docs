@@ -1,0 +1,48 @@
+---
+title: Messages & voice
+description: Track message and voice activity stats for your server members.
+---
+
+## Messages
+
+### messages
+
+Shows message stats for a user.
+
+**Syntax:** `messages [@user | userID]`  
+**Aliases:** `m`, `message`  
+**Premium:** Elite
+
+**Example:** `messages @User`
+
+---
+
+### blacklist
+
+Blacklist channels or categories from message and voice count tracking.
+
+**Syntax:** `blacklist <subcommand> <channel/category>`  
+**Aliases:** `bl`  
+**Premium:** Elite
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| add | `blacklist add <#channel\|channelId>` | `blacklist add #general` |
+| remove | `blacklist remove <#channel\|channelId>` | `blacklist remove #general` |
+| list | `blacklist list` | `blacklist list` |
+
+**Aliases for list:** `view`
+
+---
+
+## Voice
+
+### voice
+
+Shows voice (VC) stats for a user.
+
+**Syntax:** `voice [@user | userID]`  
+**Aliases:** `vc`  
+**Premium:** Elite
+
+**Example:** `voice @User`

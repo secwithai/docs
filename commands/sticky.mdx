@@ -1,0 +1,26 @@
+---
+title: Sticky
+description: Pin sticky messages at the bottom of channels that repost when new messages appear.
+---
+
+## stickymessage
+
+Manage sticky messages in channels.
+
+**Syntax:** `stickymessage <subcommand> [arguments]`  
+**Aliases:** `sticky`, `sm`  
+**Premium:** Pro
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| set | `stickymessage set <#channel\|channelId> <message>` | `stickymessage set #general Welcome!` |
+| remove | `stickymessage remove <#channel\|channelId>` | `stickymessage remove #general` |
+| limit | `stickymessage limit <number>` | `stickymessage limit 5` |
+| config | `stickymessage config` | View configuration |
+| list | `stickymessage list` | List all sticky messages |
+
+### How it works
+
+A sticky message stays at the bottom of the channel. When new messages are sent, the bot deletes its previous sticky message and reposts it, keeping it visible.

@@ -1,0 +1,118 @@
+---
+title: Giveaway
+description: Create, manage, and run giveaways in your server.
+---
+
+## gstart
+
+Starts a new giveaway.
+
+**Syntax:** `gstart <duration> <winners> <prize> [channel]`  
+**Aliases:** `giveawaystart`, `gcreate`  
+**Premium:** Elite
+
+**Example:** `gstart 1h 2 Nitro Boost`
+
+---
+
+## gend
+
+End an active giveaway early.
+
+**Syntax:** `gend <message_id>`  
+**Aliases:** `giveawayend`  
+**Premium:** Elite
+
+**Example:** `gend 1461440639311806724`
+
+---
+
+## greroll
+
+Reroll a giveaway to select new winners.
+
+**Syntax:** `greroll <message_id> [winner_count]`  
+**Aliases:** `giveawayreroll`  
+**Premium:** Elite
+
+**Example:** `greroll 1461440639311806724 2`
+
+---
+
+## gsetup
+
+Configure default giveaway settings.
+
+**Syntax:** `gsetup <subcommand> [arguments]`  
+**Aliases:** `giveawaysetup`  
+**Premium:** Elite
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| thumbnail | `gsetup thumbnail <url or attachment>` | `gsetup thumbnail https://example.com/image.png` |
+| image | `gsetup image <url or attachment>` | `gsetup image https://example.com/giveaway.png` |
+| color | `gsetup color <hex code>` | `gsetup color #FF5733` |
+| emoji | `gsetup emoji <emoji>` | `gsetup emoji 🎉` |
+| reset | `gsetup reset` | `gsetup reset` |
+| view | `gsetup view` | `gsetup view` |
+
+---
+
+## gedit
+
+Edit active giveaway settings.
+
+**Syntax:** `gedit <subcommand> <message_id> <value>`  
+**Aliases:** `giveawayedit`  
+**Premium:** Elite
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| thumbnail | `gedit thumbnail <message_id> <url>` | `gedit thumbnail 1461440639311806724 https://example.com/image.png` |
+| image | `gedit image <message_id> <url>` | `gedit image 1461440639311806724 https://example.com/banner.png` |
+| color | `gedit color <message_id> <hex code>` | `gedit color 1461440639311806724 #ffffff` |
+| host | `gedit host <message_id> <@user\|userId>` | `gedit host 1461440639311806724 @newhost` |
+| duration | `gedit duration <message_id> <time>` | `gedit duration 1461440639311806724 7d` |
+| prize | `gedit prize <message_id> <prize>` | `gedit prize 1461440639311806724 Nitro` |
+
+---
+
+## gmanager
+
+Manage the giveaway manager role.
+
+**Syntax:** `gmanager <subcommand> [@role]`  
+**Aliases:** `giveawaymanager`, `gmanage`  
+**Premium:** Elite
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| set | `gmanager set <@role\|roleid>` | `gmanager set @giveawayManagers` |
+| reset | `gmanager reset` | `gmanager reset` |
+| config | `gmanager config` | `gmanager config` |
+
+---
+
+## gban
+
+Ban users or roles from participating in giveaways.
+
+**Syntax:** `gban <subcommand> [target]`  
+**Aliases:** `giveawayban`  
+**Premium:** Elite
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| add | `gban add <@user\|userId / @role\|roleId>` | `gban add @user` |
+| remove | `gban remove <@user\|userId / @role\|roleId>` | `gban remove @user` |
+| list | `gban list` | `gban list` |
+
+---
+
+## glist
+
+Shows all active giveaways in the server.
+
+**Syntax:** `glist`  
+**Aliases:** `giveawaylist`  
+**Premium:** Elite

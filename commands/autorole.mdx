@@ -1,0 +1,35 @@
+---
+title: Autorole
+description: Configure automatic role assignment for new members (humans and bots).
+---
+
+## autorole
+
+Configure auto role assignment for new members.
+
+**Syntax:** `autorole <subcommand> [arguments]`  
+**Aliases:** `autoroles`  
+**Premium:** Elite
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| set | `autorole set <human\|bot> <@role\|roleid>` | `autorole set human @Member` |
+| remove | `autorole remove <human\|bot> <@role\|roleid>` | `autorole remove human @Member` |
+| reset | `autorole reset` | `autorole reset` |
+| config | `autorole config` | `autorole config` |
+
+### Examples
+
+Assign a role to all new human members:
+
+```
+autorole set human @Member
+```
+
+Assign a role to all new bots:
+
+```
+autorole set bot @BotRole
+```

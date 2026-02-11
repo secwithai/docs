@@ -1,0 +1,30 @@
+---
+title: Embed
+description: Create and send custom embeds in your server.
+---
+
+## embed
+
+Create and edit custom embeds.
+
+**Syntax:** `embed <subcommand> [arguments]`  
+**Premium:** Elite
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| create | `embed create <name>` | `embed create welcome` |
+| edit | `embed edit <name>` | `embed edit welcome` |
+| list | `embed list` | `embed list` |
+| show | `embed show <name>` | `embed show welcome` |
+| send | `embed send <name> <#channel\|channelId>` | `embed send welcome #general` |
+| delete | `embed delete <name>` | `embed delete welcome` |
+| variables | `embed variables` | View available variables |
+
+### Workflow
+
+1. Create an embed with `embed create welcome`
+2. Edit it with the embed builder via `embed edit welcome`
+3. Send it to a channel with `embed send welcome #general`
+4. Use `embed variables` to see placeholders like `{user}`, `{server}`, etc.

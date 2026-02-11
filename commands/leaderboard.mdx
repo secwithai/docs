@@ -1,0 +1,55 @@
+---
+title: Leaderboard
+description: View and configure live leaderboards for messages, voice, and invites.
+---
+
+## leaderboard
+
+View leaderboard or ranked list of users.
+
+**Syntax:** `leaderboard <subcommand>`  
+**Aliases:** `lb`  
+**Premium:** Elite
+
+### Subcommands
+
+| Subcommand | Aliases | Description |
+|------------|---------|-------------|
+| messages | `m` | All-time message leaderboard |
+| dailymessages | `dm` | Daily message leaderboard |
+| weeklymessages | `wm` | Weekly message leaderboard |
+| voice | `vc` | All-time voice leaderboard |
+| dailyvoice | `dv` | Daily voice leaderboard |
+| weeklyvoice | `wv` | Weekly voice leaderboard |
+| invites | `i` | Invites leaderboard |
+
+### Examples
+
+```
+leaderboard messages
+leaderboard dm
+leaderboard voice
+leaderboard invites
+```
+
+---
+
+## liveleaderboard
+
+Setup live updating leaderboards in a channel.
+
+**Syntax:** `liveleaderboard <subcommand> [type] [channel]`  
+**Aliases:** `live`, `livelb`, `liveleaderboards`  
+**Premium:** Elite
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| setup | `liveleaderboard setup <type> <#channel\|channelId>` | `liveleaderboard setup messages #leaderboard` |
+| reset | `liveleaderboard reset` | `liveleaderboard reset` |
+| config | `liveleaderboard config` | `liveleaderboard config` |
+
+### Types
+
+`messages`, `dailymessages`, `weeklymessages`, `voice`, `dailyvoice`, `weeklyvoice`, `invites`, `giveaways`

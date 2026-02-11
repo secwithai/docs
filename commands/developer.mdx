@@ -1,0 +1,82 @@
+---
+title: Developer
+description: Owner-only commands for bot management. Requires Developer premium.
+---
+
+## Backup & data
+
+| Command | Syntax | Description |
+|---------|--------|-------------|
+| backup | `backup` | Create database backup |
+| blacklistuser | `blacklistuser <add\|remove\|list> [userid]` | Manage blacklisted users |
+| blacklistserver | `blacklistserver <add\|remove\|list> [serverid]` | Manage blacklisted servers |
+
+**Aliases:** `zip` for backup; `bu` for blacklistuser; `bs` for blacklistserver
+
+---
+
+## Bot management
+
+| Command | Syntax | Description |
+|---------|--------|-------------|
+| restart | `restart` | Restart the bot |
+| reload | `reload <command>` | Reload a command |
+| sync | `sync <global\|guild\|clear\|fix> [guildId]` | Register slash commands |
+| eval | `eval` | Evaluate JavaScript code |
+| execute | `execute` | Execute shell command |
+
+**Aliases:** `reboot` for restart; `rlcmd` for reload; `ev`, `jaduexe` for eval; `exec` for execute
+
+---
+
+## Server management
+
+| Command | Syntax | Description |
+|---------|--------|-------------|
+| leaveserver | `leaveserver <guildId>` | Leave a server |
+| serverslist | `serverslist` | Paginated list of servers |
+| getinv | `getinv <guildId>` | Fetch invite links |
+| ginv | `ginv <guildId>` | Create invite link |
+
+**Aliases:** `leaveg`, `gleave` for leaveserver; `slist` for serverslist; `gfetch` for getinv
+
+---
+
+## Shards
+
+| Command | Syntax | Description |
+|---------|--------|-------------|
+| shards | `shards` | Display shard/cluster status |
+
+**Aliases:** `cluster`, `clusters`
+
+---
+
+## Subscription management
+
+### subscription
+
+Manage premium users and servers.
+
+**Syntax:** `subscription <subcommand> [arguments]`  
+**Aliases:** `+`  
+**Premium:** Developer
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| add | `subscription add <@user\|userId> <days> <tier>` | `subscription add @user 30 elite` |
+| remove | `subscription remove <@user\|userId>` | Remove premium |
+| activate | `subscription activate <@user\|userId> [planId] <serverId>` | Activate for server |
+| deactivate | `subscription deactivate <@user\|userId> <planId>` | Deactivate |
+| transfer | `subscription transfer <@user\|userId> <planId> <targetServerId>` | Transfer between servers |
+
+**Aliases:** `+`, `a` for add; `-`, `r` for remove; `active` for activate; `deactive` for deactivate; `t` for transfer
+
+---
+
+## docs
+
+Generate and send a text file with all commands documentation.
+
+**Syntax:** `docs`  
+**Premium:** Developer

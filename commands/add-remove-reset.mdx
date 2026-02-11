@@ -1,0 +1,59 @@
+---
+title: Add / Remove / Reset
+description: Manually add, remove, or reset message, voice, and invite stats for users.
+---
+
+## add
+
+Add messages, voice time, or invites to a user's stats.
+
+**Syntax:** `add <subcommand> <@user> <amount>`  
+**Premium:** Elite
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| message | `add message <daily\|weekly\|all> <@user\|userId> <amount>` | `add message daily @user 100` |
+| voice | `add voice <daily\|weekly\|all> <@user> <time>` | `add voice daily @user 1h` |
+| invite | `add invite <@user\|userId> <amount>` | `add invite @user 5` |
+
+**Aliases:** `msg`, `m` for message; `vc` for voice; `i` for invite
+
+---
+
+## remove
+
+Remove messages, voice time, or invites from a user's stats.
+
+**Syntax:** `remove <subcommand> <@user> <amount>`  
+**Premium:** Elite
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| message | `remove message <daily\|weekly\|all> <@user\|userId> <amount>` | `remove message daily @user 50` |
+| voice | `remove voice <daily\|weekly\|all> <@user> <time>` | `remove voice daily @user 30m` |
+| invite | `remove invite <@user\|userId> <amount>` | `remove invite @user 2` |
+
+**Aliases:** `msg`, `m` for message; `vc` for voice; `inv` for invite
+
+---
+
+## reset
+
+Reset messages, voice time, or invites for a user or the entire server.
+
+**Syntax:** `reset <subcommand> [user/all]`  
+**Premium:** Elite
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| message | `reset message <daily\|weekly\|all> [@user \| userID]` | `reset message daily @user` |
+| voice | `reset voice <daily\|weekly\|all> [@user \| userID]` | `reset voice daily @user` |
+| invite | `reset invite [@user \| userID]` | `reset invite @user` |
+
+**Aliases:** `msg`, `m` for message; `vc` for voice; `i` for invite

@@ -1,0 +1,24 @@
+---
+title: Join to Create
+description: Setup automatic voice channel creation when members join.
+---
+
+## jointocreate
+
+Setup automatic voice channel creation on join.
+
+**Syntax:** `jointocreate <subcommand>`  
+**Aliases:** `jtc`, `j2c`  
+**Premium:** Pro
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| setup | `jointocreate setup` | `jointocreate setup` |
+| view | `jointocreate view` | `jointocreate view` |
+| reset | `jointocreate reset` | `jointocreate reset` |
+
+### How it works
+
+When you run `jointocreate setup`, the bot creates a special voice channel. When a member joins that channel, the bot automatically creates a new temporary voice channel for them. When they leave, the empty channel is deleted.

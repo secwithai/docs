@@ -1,0 +1,31 @@
+---
+title: Autoresponder
+description: Setup automatic responses to keywords in your server.
+---
+
+## autoresponder
+
+Setup automatic responses to keywords.
+
+**Syntax:** `autoresponder <subcommand> [arguments]`  
+**Aliases:** `ar`, `autoresponse`  
+**Premium:** Pro
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| set | `autoresponder set <keyword> {response}` | `autoresponder set hello Hi there!` |
+| list | `autoresponder list` | `autoresponder list` |
+| mode | `autoresponder mode <include\|exact>` | `autoresponder mode include` |
+| allowed | `autoresponder allowed <role\|category\|channel> <id> <keyword>` | `autoresponder allowed channel #general hello` |
+| remove | `autoresponder remove <keyword>` | `autoresponder remove hello` |
+| config | `autoresponder config` | `autoresponder config` |
+| variables | `autoresponder variables` | View available variables |
+
+**Aliases:** `create` for set; `delete` for remove
+
+### Modes
+
+- **include** — Triggers when the keyword appears anywhere in the message
+- **exact** — Triggers only when the message exactly matches the keyword

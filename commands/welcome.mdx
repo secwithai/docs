@@ -1,0 +1,31 @@
+---
+title: Welcome
+description: Configure welcome messages for new members joining your server.
+---
+
+## welcome
+
+Configure welcome messages for new members.
+
+**Syntax:** `welcome <subcommand> [arguments]`  
+**Premium:** Pro
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| on | `welcome on` | Enable welcome messages |
+| off | `welcome off` | Disable welcome messages |
+| channel | `welcome channel <#channel\|channelID>` | `welcome channel #general` |
+| message | `welcome message <message content>` | `welcome message Welcome {user} to {server}!` |
+| test | `welcome test` | Send a test welcome message |
+| reset | `welcome reset` | Reset configuration |
+| config | `welcome config` | View current configuration |
+
+### Variables
+
+Use these in your welcome message:
+
+- `{user}` — Mentions the new member
+- `{username}` — Member's username
+- `{server}` — Server name

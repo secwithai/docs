@@ -1,0 +1,33 @@
+---
+title: Reminder
+description: Set personal reminders (up to 5 per user).
+---
+
+## reminder
+
+Manage personal reminders.
+
+**Syntax:** `reminder <subcommand> [arguments]`  
+**Aliases:** `remind`  
+**Premium:** Elite
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| start | `reminder start <duration> {message}` | `reminder start 1h Meeting at 3 PM` |
+| stop | `reminder stop <id>` | `reminder stop 1` |
+| pause | `reminder pause <id>` | `reminder pause 1` |
+| resume | `reminder resume <id>` | `reminder resume 1` |
+| end | `reminder end <id>` | `reminder end 1` |
+| list | `reminder list` | `reminder list` |
+
+**Aliases for start:** `set`
+
+### Duration format
+
+Use formats like `1m`, `30m`, `1h`, `1d`, `1w` for time.
+
+### Limits
+
+Each user can have up to **5 active reminders** at a time.

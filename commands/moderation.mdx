@@ -1,0 +1,133 @@
+---
+title: Moderation
+description: Full moderation toolkit — ban, kick, mute, purge, and manage your server.
+---
+
+## Mod management
+
+### mod
+
+Manage server moderators and permissions.
+
+**Syntax:** `mod <subcommand> [argument]`  
+**Premium:** Pro
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| add | `mod add <@user\|userID>` | Add a moderator |
+| remove | `mod remove <@user\|userID>` | Remove a moderator |
+| permit | `mod permit <@user\|userID>` | Toggle permission to manage mods |
+| immune | `mod immune <@role\|roleID>` | Toggle immune status for a role |
+| list | `mod list` | List all moderators |
+| audit | `mod audit [user]` | View audit logs |
+
+---
+
+## Bans & kicks
+
+| Command | Syntax | Example |
+|---------|--------|---------|
+| ban | `ban <@user\|userid> [reason]` | `ban @user Spam` |
+| unban | `unban <userid> [reason]` | `unban 123456789 Appeal accepted` |
+| unbanall | `unbanall` | Unban all users |
+| kick | `kick <@user\|userid> [reason]` | `kick @user Breaking rules` |
+
+**Aliases:** `hackban` for ban
+
+---
+
+## Mute & timeout
+
+| Command | Syntax | Example |
+|---------|--------|---------|
+| mute | `mute <@user\|userid> [duration] [reason]` | `mute @user 10m Spamming` |
+| unmute | `unmute <@user\|userid> [reason]` | `unmute @user Appeal accepted` |
+| unmuteall | `unmuteall` | Remove all timeouts |
+
+**Aliases:** `timeout` for mute; `untimeout` for unmute
+
+---
+
+## Channel moderation
+
+| Command | Syntax | Example |
+|---------|--------|---------|
+| lock | `lock [#channel] [reason]` | `lock #general Raid protection` |
+| unlock | `unlock [#channel] [reason]` | `unlock #general` |
+| lockall | `lockall` | Lock all channels |
+| unlockall | `unlockall` | Unlock all channels |
+| hide | `hide [#channel]` | Hide channel from @everyone |
+| unhide | `unhide [#channel]` | Unhide channel |
+| hideall | `hideall` | Hide all channels |
+| unhideall | `unhideall` | Unhide all channels |
+| slowmode | `slowmode <seconds>` | `slowmode 10` |
+| chatban | `chatban <@user\|userid> [channel] [reason]` | Remove send permission |
+| chatunban | `chatunban <@user\|userid> [channel] [reason]` | Restore send permission |
+| nuke | `nuke [reason]` | Clone and delete channel |
+
+---
+
+## Purge
+
+### purge
+
+Delete messages with various filters.
+
+**Syntax:** `purge <subcommand> <amount> [content]`  
+**Aliases:** `clear`, `c`, `p`  
+**Premium:** Pro
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| bots | `purge bots <amount>` | Delete bot messages |
+| humans | `purge humans <amount>` | Delete human messages |
+| mentions | `purge mentions <amount>` | Delete messages with mentions |
+| links | `purge links <amount>` | Delete messages with links |
+| attachments | `purge attachments <amount>` | Delete messages with attachments |
+| emojis | `purge emojis <amount>` | Delete messages with emojis |
+| stickers | `purge stickers <amount>` | Delete messages with stickers |
+| contains | `purge contains <amount> <content>` | `purge contains 5 spam` |
+| users | `purge user <amount> <@user>` | Delete messages from a user |
+
+### purgebots
+
+Delete messages from bots in the current channel.
+
+**Syntax:** `purgebots [amount]`  
+**Aliases:** `pb`, `purgebot`  
+**Premium:** Pro
+
+---
+
+## Voice channel moderation
+
+| Command | Syntax | Example |
+|---------|--------|---------|
+| vcban | `vcban <@user\|userid> [reason]` | Ban from voice channels |
+| vcunban | `vcunban <@user\|userid> [reason]` | Unban from voice |
+| vcunbanall | `vcunbanall` | Unban all |
+| vclock | `vclock [#channel] [reason]` | Lock voice channel |
+| vcunlock | `vcunlock [#channel] [reason]` | Unlock voice channel |
+| vcmove | `vcmove <user\|userId> [#channel] [reason]` | Move a member |
+| vcmoveall | `vcmoveall <#channel>` or `vcmoveall <#from> <#to>` | Move all members |
+
+**Aliases:** `voiceban`, `vban` for vcban; `voiceunban`, `vunban` for vcunban; `move`, `pull` for vcmove; `moveall`, `pullall` for vcmoveall
+
+---
+
+## Other
+
+| Command | Syntax | Example |
+|---------|--------|---------|
+| warn | `warn <@user\|userId> [reason]` | Warn a member |
+| warn remove | `warn remove <@user\|userId> <warnID>` | Remove a warning |
+| warn list | `warn list <@user\|userId>` | List warnings |
+| warn reset | `warn reset <@user\|userId>` | Reset all warnings |
+| nick | `nick <@member\|id> [new nickname]` | Change or remove nickname |
+| role | `role <@user> <role>` or `role all <role>` | Add/remove roles |
+| list | `list <subcommand>` | List admins, mods, bans, etc. |
+| snipe | `snipe` | Retrieve last deleted message |
+
+### list subcommands
+
+`admin`, `mod`, `bot`, `ban`, `muted`, `inrole`, `roles`, `noroles`, `boost`, `joinpos`

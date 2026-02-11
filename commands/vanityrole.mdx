@@ -1,0 +1,23 @@
+---
+title: Vanityrole
+description: Configure custom vanity roles for your server.
+---
+
+## vanityrole
+
+Configure custom vanity roles.
+
+**Syntax:** `vanityrole <subcommand> [arguments]`  
+**Aliases:** `vrole`  
+**Premium:** Pro
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| set | `vanityrole set <@role\|roleId> [vanitycode]` | `vanityrole set @VanityRole synqlabs` |
+| reset | `vanityrole reset` | `vanityrole reset` |
+| channel | `vanityrole channel <#channel\|channelId>` | `vanityrole channel #notifications` |
+| message | `vanityrole message <content>` | `vanityrole message {user} {embed: vanityrole}` |
+| testmessage | `vanityrole testmessage` | Test the message |
+| config | `vanityrole config` | View configuration |

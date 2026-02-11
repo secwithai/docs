@@ -1,69 +1,110 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "docs",
+  "name": "SYNQ Bot",
+  "description": "Complete command documentation for SYNQ Bot",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#5865F2",
+    "light": "#7289DA",
+    "dark": "#4752C4"
   },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Overview",
         "groups": [
           {
             "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
+            "pages": ["index", "premium"]
+          }
+        ]
+      },
+      {
+        "tab": "Server Configuration",
+        "groups": [
           {
-            "group": "Customization",
+            "group": "Setup",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "commands/invite-welcome",
+              "commands/autorole",
+              "commands/greet",
+              "commands/jointocreate",
+              "commands/customise"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Tracking",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Stats & leaderboards",
             "pages": [
-              "api-reference/introduction"
+              "commands/messages-voice",
+              "commands/invites",
+              "commands/leaderboard",
+              "commands/add-remove-reset"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Moderation",
+        "groups": [
           {
-            "group": "Endpoint examples",
+            "group": "Moderation commands",
+            "pages": ["commands/moderation"]
+          }
+        ]
+      },
+      {
+        "tab": "Engagement",
+        "groups": [
+          {
+            "group": "Giveaways & tools",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "commands/giveaway",
+              "commands/boostrole",
+              "commands/embed",
+              "commands/reminder",
+              "commands/timer"
             ]
+          }
+        ]
+      },
+      {
+        "tab": "Automation",
+        "groups": [
+          {
+            "group": "Automation",
+            "pages": [
+              "commands/autoresponder",
+              "commands/customrole",
+              "commands/guildtag",
+              "commands/vanityrole",
+              "commands/sticky",
+              "commands/ticket",
+              "commands/welcome"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Utility & Info",
+        "groups": [
+          {
+            "group": "Commands",
+            "pages": ["commands/utility", "commands/information"]
+          }
+        ]
+      },
+      {
+        "tab": "Developer",
+        "groups": [
+          {
+            "group": "Owner commands",
+            "pages": ["commands/developer"]
           }
         ]
       }
@@ -71,14 +112,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Support Server",
+          "href": "https://discord.gg/synq",
+          "icon": "discord"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Invite Bot",
+          "href": "https://discord.com/oauth2/authorize",
+          "icon": "plus"
         }
       ]
     }
@@ -90,33 +131,23 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Support Server",
+        "href": "https://discord.gg/synq"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Invite Bot",
+      "href": "https://discord.com/oauth2/authorize"
     }
   },
   "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
+    "options": ["copy", "view", "chatgpt", "claude", "perplexity"]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "discord": "https://discord.gg/synq",
+      "github": "https://github.com"
     }
   }
 }

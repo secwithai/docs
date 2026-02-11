@@ -1,0 +1,122 @@
+---
+title: Invite & welcome
+description: Configure invite tracking, join/leave messages, and welcome settings for your server.
+---
+
+## Invite tracking
+
+### invites
+
+Shows invite stats for a user.
+
+**Syntax:** `invites [@user | userID]`
+
+**Example:** `invites @User`
+
+**Aliases:** `i`  
+**Premium:** Elite
+
+---
+
+### invited
+
+Shows the list of members invited by a user.
+
+**Syntax:** `invited [@user | userID]`  
+**Premium:** Elite
+
+---
+
+### inviteinfo
+
+Displays the active invite code of a user in this guild.
+
+**Syntax:** `inviteinfo [@user | userID]`  
+**Aliases:** `invinfo`  
+**Premium:** Elite
+
+---
+
+### inviter
+
+Shows who invited a user to the server.
+
+**Syntax:** `inviter [@user | userID]`  
+**Premium:** Elite
+
+---
+
+## Alt account detection
+
+### alternate
+
+Configure alt account detection based on account age.
+
+**Syntax:** `alternate <subcommand> [days]`  
+**Aliases:** `alt`, `fake`  
+**Premium:** Elite
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| set | `alternate set <days>` | `alternate set 30` |
+| reset | `alternate reset` | `alternate reset` |
+| config | `alternate config` | `alternate config` |
+
+---
+
+## Join & leave messages
+
+### set
+
+Configure join and leave messages for your server.
+
+**Syntax:** `set <subcommand> <value>`  
+**Premium:** Elite
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| joinchannel | `set joinchannel <#channel\|channelId>` | `set joinchannel #welcome` |
+| joinmessage | `set joinmessage {message}` | `set joinmessage Welcome {user} {embed: welcome}` |
+| leavechannel | `set leavechannel <#channel\|channelId>` | `set leavechannel #goodbye` |
+| leavemessage | `set leavemessage {message}` | `set leavemessage {user} left the server {embed: goodbye}` |
+
+---
+
+### test
+
+Test your join and leave messages.
+
+**Syntax:** `test <subcommand>`  
+**Aliases:** `testmsg`  
+**Premium:** Elite
+
+| Subcommand | Example |
+|------------|---------|
+| joinmessage | `test joinmessage` |
+| leavemessage | `test leavemessage` |
+
+---
+
+### unset
+
+Remove join and leave message configurations.
+
+**Syntax:** `unset <subcommand>`  
+**Premium:** Elite
+
+| Subcommand | Example |
+|------------|---------|
+| joinchannel | `unset joinchannel` |
+| joinmessage | `unset joinmessage` |
+| leavechannel | `unset leavechannel` |
+| leavemessage | `unset leavemessage` |
+
+---
+
+## Welcome (Tier 2)
+
+### welcome
+
+Configure welcome messages for new members. See the [Welcome](/commands/welcome) page for full welcome command documentation.
+
+**Premium:** Pro

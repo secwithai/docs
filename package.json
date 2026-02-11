@@ -1,8 +1,7 @@
 {
   "name": "docs",
-"scripts": {
-  "dev": "mintlify dev",
-  "build": "npx mintlify build",
-  "start": "mintlify start"
- }
+  "scripts": {
+    "dev": "mintlify dev",
+    "validate": "mintlify validate"
+  }
 }

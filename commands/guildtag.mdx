@@ -1,0 +1,23 @@
+---
+title: Guildtag
+description: Configure server tag notifications when members get specific roles.
+---
+
+## guildtag
+
+Configure server tag notifications.
+
+**Syntax:** `guildtag <subcommand> [arguments]`  
+**Aliases:** `gtag`, `servertag`  
+**Premium:** Pro
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| set | `guildtag set <@role\|roleId>` | `guildtag set @GuildTag` |
+| reset | `guildtag reset` | `guildtag reset` |
+| channel | `guildtag channel <#channel\|channelId>` | `guildtag channel #notifications` |
+| message | `guildtag message {content}` | `guildtag message {user} {embed: guildtag}` |
+| test | `guildtag test` | Test the notification |
+| config | `guildtag config` | View configuration |

@@ -1,0 +1,32 @@
+---
+title: Timer
+description: Manage server-wide timers for events and countdowns.
+---
+
+## timer
+
+Manage server timers.
+
+**Syntax:** `timer <subcommand> [arguments]`  
+**Aliases:** `t`  
+**Premium:** Elite
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| start | `timer start <duration> {name}` | `timer start 30m Event Timer` |
+| stop | `timer stop <id>` | `timer stop 1` |
+| pause | `timer pause <id>` | `timer pause 1` |
+| resume | `timer resume <id>` | `timer resume 1` |
+| end | `timer end <id>` | `timer end 1` |
+| list | `timer list` | `timer list` |
+
+### Duration format
+
+Use formats like `1m`, `30m`, `1h`, `1d` for time.
+
+### Timer vs reminder
+
+- **Reminder** — Personal, notifies only you
+- **Timer** — Server-wide, visible to everyone

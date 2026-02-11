@@ -1,0 +1,27 @@
+---
+title: Customrole
+description: Manage custom server roles that members can assign to themselves.
+---
+
+## setup (customrole)
+
+Manage custom server roles.
+
+**Syntax:** `setup <subcommand> [arguments]`  
+**Aliases:** `customrole`  
+**Premium:** Pro
+
+### Subcommands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| add | `setup add <name> <@role\|roleId\|roleName>` | `setup add vip @VIP` |
+| remove | `setup remove <name>` | `setup remove vip` |
+| config | `setup config` | `setup config` |
+| reset | `setup reset` | `setup reset` |
+| list | `setup list` | `setup list` |
+| reqrole | `setup reqrole <@role\|roleId\|roleName>` | `setup reqrole @reqrole` |
+
+### How it works
+
+Add roles that members can self-assign. Use `reqrole` to require a specific role before members can access custom roles.

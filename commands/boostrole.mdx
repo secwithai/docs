@@ -1,0 +1,45 @@
+---
+title: Boostrole
+description: Let boosters create and customize their own personal boost roles.
+---
+
+## boostrole
+
+Manage your personal boost role in the server.
+
+**Syntax:** `boostrole <subcommand> [arguments]`  
+**Aliases:** `br`  
+**Premium:** Elite
+
+### Core commands
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| on | `boostrole on` | Enable your boost role |
+| off | `boostrole off` | Disable without deleting |
+| create | `boostrole create <#color1> [#color2] [emoji] <name>` | `boostrole create #ff0000 #0000ff ⭐ VIP` |
+| rename | `boostrole rename <newName>` | `boostrole rename Super Booster` |
+| color | `boostrole color <#color>` | `boostrole color #ff0000` |
+| icon | `boostrole icon <emoji>` | `boostrole icon ⭐` |
+| remove | `boostrole remove` | Permanently delete your boost role |
+
+### Sharing
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| share | `boostrole share <@user\|userId>` | Share with another user |
+| unshare | `boostrole unshare <@user\|userId>` | Remove sharing |
+| sharelimit | `boostrole sharelimit <number>` | Max users who can share (e.g., `boostrole sharelimit 5`) |
+
+### Configuration
+
+| Subcommand | Syntax | Example |
+|------------|--------|---------|
+| baserole | `boostrole baserole <@role\|roleid>` | Set permission inheritance |
+| filter | `boostrole filter <add\|remove\|list> <word>` | Block words from role names |
+| message | `boostrole message <content>` | Custom message for boost actions |
+| setchannel | `boostrole setchannel <#channel\|channelId>` | Channel for boost messages |
+| testmessage | `boostrole testmessage` | Preview the message |
+| display | `boostrole display <enable\|disable>` | Configure display |
+| list | `boostrole list` | View all boost roles |
+| config | `boostrole config` | View configuration |
