@@ -2,7 +2,7 @@
   "name": "docs",
   "scripts": {
     "dev": "mintlify dev",
-    "build": "mintlify build",
+   "build": "npx mintlify build",
     "start": "mintlify start"
   },
   "dependencies": {
