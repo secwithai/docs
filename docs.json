@@ -1,1 +1,150 @@
-{ "folder": "corrected_folder_structure" }
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "SYNQ Bot",
+  "description": "Complete command documentation for SYNQ Bot",
+  "colors": {
+    "primary": "#5865F2",
+    "light": "#7289DA",
+    "dark": "#4752C4"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Overview",
+        "groups": [
+          {
+            "group": "Getting started",
+            "pages": ["index", "premium"]
+          }
+        ]
+      },
+      {
+        "tab": "Server Configuration",
+        "groups": [
+          {
+            "group": "Setup",
+            "pages": [
+              "Configuration/invite-welcome",
+              "Configuration/autorole",
+              "Configuration/greet",
+              "Configuration/jointocreate",
+              "Configuration/customise"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Tracking",
+        "groups": [
+          {
+            "group": "Stats & leaderboards",
+            "pages": [
+              "Tracking/messages-voice",
+              "Tracking/invites",
+              "Tracking/leaderboard",
+              "Tracking/add-remove-reset"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Moderation",
+        "groups": [
+          {
+            "group": "Moderation commands",
+            "pages": ["Moderation/moderation"]
+          }
+        ]
+      },
+      {
+        "tab": "Engagement",
+        "groups": [
+          {
+            "group": "Giveaways & tools",
+            "pages": [
+              "Engagement/giveaway",
+              "Engagement/boostrole",
+              "Engagement/embed",
+              "Engagement/reminder",
+              "Engagement/timer"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Automation",
+        "groups": [
+          {
+            "group": "Automation",
+            "pages": [
+              "Automation/autoresponder",
+              "Automation/customrole",
+              "Automation/guildtag",
+              "Automation/vanityrole",
+              "Automation/sticky",
+              "Automation/ticket",
+              "Automation/welcome"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Utility & Info",
+        "groups": [
+          {
+            "group": "Commands",
+            "pages": ["Utility & Info/utility", "Utility & Info/information"]
+          }
+        ]
+      },
+      {
+        "tab": "Developer",
+        "groups": [
+          {
+            "group": "Owner commands",
+            "pages": ["Developer/developer"]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Support Server",
+          "href": "https://discord.gg/synqlabs",
+          "icon": "discord"
+        },
+        {
+          "anchor": "Invite Bot",
+          "href": "https://discord.com/oauth2/authorize",
+          "icon": "plus"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support Server",
+        "href": "https://discord.gg/synqlabs"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Invite Bot",
+      "href": "https://discord.com/oauth2/authorize"
+    }
+  },
+  "footer": {
+    "socials": {
+      "discord": "https://discord.gg/synqlabs",
+      "github": "https://github.com"
+    }
+  }
+}
