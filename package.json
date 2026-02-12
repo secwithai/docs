@@ -1,7 +1,0 @@
-{
-  "name": "docs",
-  "scripts": {
-    "dev": "mintlify dev",
-    "validate": "mintlify validate"
-  }
-}
