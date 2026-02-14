@@ -2,7 +2,10 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "SYNQ Bot",
-  "logo": "/synq-dark.svg",
+  "logo": {
+   "light": "/synq-light.svg",
+   "dark": "/synq-dark.svg"
+  }
   "description": "Complete command documentation for SYNQ Bot",
   "colors": {
     "primary": "#5865F2",
