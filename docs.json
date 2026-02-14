@@ -3,8 +3,8 @@
   "theme": "mint",
   "name": "SYNQ Bot",
   "logo": {
-   "light": "/synq-light.svg",
-   "dark": "/synq-dark.svg"
+   "light": "public/synq-light.svg",
+   "dark": "public/synq-dark.svg"
   }
   "description": "Complete command documentation for SYNQ Bot",
   "colors": {
