@@ -6,7 +6,7 @@
 
   "appearance": {
   "default": "dark",
-  "toggle": false
+  "toggle": true
 },
 
   "colors": {
