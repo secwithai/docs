@@ -139,14 +139,13 @@
   
    "light": "/logo/synq-light.png",
     "dark": "/logo/synq1.png",
-     "appearance": {
-    "default": "dark",
-    "strict": true
-  },
     "height": 68,
     "href": "/"
   },
-
+   "appearance": {
+    "default": "dark",
+    "strict": true
+  },
   "navbar": {
     "links": [
       {
