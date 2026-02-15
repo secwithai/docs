@@ -99,15 +99,6 @@
           }
         ]
       },
-      {
-        "tab": "Developer",
-        "groups": [
-          {
-            "group": "Owner commands",
-            "pages": ["commands/developer"]
-          }
-        ]
-      }
     ],
     "global": {
       "anchors": [
@@ -126,7 +117,11 @@
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg" 
+    "appearance": {
+    "default": "dark",
+    "strict": true
+  },
   },
   "navbar": {
     "links": [
