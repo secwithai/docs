@@ -3,10 +3,6 @@
   "theme": "mint",
   "name": "Synq Documentation",
   "description": "Complete command documentation for SYNQ Bot",
-
-  "appearance": {
-  "default": "dark",
-  "toggle": true
 },
 
   "colors": {
