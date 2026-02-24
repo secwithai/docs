@@ -18,20 +18,15 @@
   "favicon": "logo/synq-light.png",
   
   "navigation": {
-    "tabs": [
+    "groups": [
       {
-        "tab": "Overview",
-        "groups": [
-          {
+        "group": "Overview",
+        "pages": [
             "group": "Getting started",
             "pages": ["index", "premium"]
-          }
         ]
       },
-      {
-        "tab": "Server Configuration",
-        "groups": [
-          {
+        {
             "group": "Setup",
             "pages": [
               "Configuration/invite-welcome",
@@ -40,13 +35,8 @@
               "Configuration/jointocreate",
               "Configuration/customise"
             ]
-          }
-        ]
       },
-      {
-        "tab": "Tracking",
-        "groups": [
-          {
+    {
             "group": "Stats & leaderboards",
             "pages": [
               "Tracking/messages-voice",
@@ -54,23 +44,13 @@
               "Tracking/leaderboard",
               "Tracking/add-remove-reset"
             ]
-          }
-        ]
       },
-      {
-        "tab": "Moderation",
-        "groups": [
           {
             "group": "Moderation commands",
             "pages": ["Moderation/moderation"]
-          }
-        ]
       },
       {
-        "tab": "Engagement",
-        "groups": [
-          {
-            "group": "Giveaways & tools",
+        "group": "Giveaways & tools",
             "pages": [
               "Engagement/giveaway",
               "Engagement/boostrole",
@@ -78,14 +58,9 @@
               "Engagement/reminder",
               "Engagement/timer"
             ]
-          }
-        ]
       },
       {
-        "tab": "Automation",
-        "groups": [
-          {
-            "group": "Automation",
+        "group": "Automation",
             "pages": [
               "Automation/autoresponder",
               "Automation/customrole",
@@ -95,22 +70,14 @@
               "Automation/ticket",
               "Automation/welcome"
             ]
-          }
-        ]
       },
       {
-        "tab": "Utility & Info",
-        "groups": [
-          {
             "group": "Commands",
             "pages": [
               "Utility & Info/utility",
               "Utility & Info/information"
             ]
-          }
-        ]
-      }
-    ],
+      },
 
     "global": {
       "anchors": [
