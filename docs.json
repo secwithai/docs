@@ -5,9 +5,9 @@
   "description": "Complete command documentation for SYNQ Bot",
 
   "appearance": {
-  "default": "dark",
-  "toggle": false
-},
+    "default": "dark",
+    "toggle": false
+  },
 
   "colors": {
     "primary": "#5865F2",
@@ -15,69 +15,79 @@
     "dark": "#4752C4"
   },
 
-  "favicon": "logo/synq-light.png",
-  
+  "favicon": "/logo/synq-light.png",
+
+  "logo": {
+    "light": "/logo/synq-light.png",
+    "dark": "/logo/synq1.png",
+    "height": 68,
+    "href": "/"
+  },
+
   "navigation": {
     "groups": [
       {
         "group": "Overview",
         "pages": [
-            "group": "Getting started",
-            "pages": ["index", "premium"]
+          "index",
+          "premium"
         ]
       },
-        {
-            "group": "Setup",
-            "pages": [
-              "Configuration/invite-welcome",
-              "Configuration/autorole",
-              "Configuration/greet",
-              "Configuration/jointocreate",
-              "Configuration/customise"
-            ]
+      {
+        "group": "Setup",
+        "pages": [
+          "Configuration/invite-welcome",
+          "Configuration/autorole",
+          "Configuration/greet",
+          "Configuration/jointocreate",
+          "Configuration/customise"
+        ]
       },
-    {
-            "group": "Stats & leaderboards",
-            "pages": [
-              "Tracking/messages-voice",
-              "Tracking/invites",
-              "Tracking/leaderboard",
-              "Tracking/add-remove-reset"
-            ]
+      {
+        "group": "Stats & leaderboards",
+        "pages": [
+          "Tracking/messages-voice",
+          "Tracking/invites",
+          "Tracking/leaderboard",
+          "Tracking/add-remove-reset"
+        ]
       },
-          {
-            "group": "Moderation commands",
-            "pages": ["Moderation/moderation"]
+      {
+        "group": "Moderation commands",
+        "pages": [
+          "Moderation/moderation"
+        ]
       },
       {
         "group": "Giveaways & tools",
-            "pages": [
-              "Engagement/giveaway",
-              "Engagement/boostrole",
-              "Engagement/embed",
-              "Engagement/reminder",
-              "Engagement/timer"
-            ]
+        "pages": [
+          "Engagement/giveaway",
+          "Engagement/boostrole",
+          "Engagement/embed",
+          "Engagement/reminder",
+          "Engagement/timer"
+        ]
       },
       {
         "group": "Automation",
-            "pages": [
-              "Automation/autoresponder",
-              "Automation/customrole",
-              "Automation/guildtag",
-              "Automation/vanityrole",
-              "Automation/sticky",
-              "Automation/ticket",
-              "Automation/welcome"
-            ]
+        "pages": [
+          "Automation/autoresponder",
+          "Automation/customrole",
+          "Automation/guildtag",
+          "Automation/vanityrole",
+          "Automation/sticky",
+          "Automation/ticket",
+          "Automation/welcome"
+        ]
       },
       {
-            "group": "Commands",
-            "pages": [
-              "Utility & Info/utility",
-              "Utility & Info/information"
-            ]
-      },
+        "group": "Commands",
+        "pages": [
+          "Utility & Info/utility",
+          "Utility & Info/information"
+        ]
+      }
+    ],
 
     "global": {
       "anchors": [
@@ -93,13 +103,6 @@
         }
       ]
     }
-  },
-
-  "logo": {
-    "light": "/logo/synq-light.png",
-    "dark": "/logo/synq1.png",
-    "height": 68,
-    "href": "/"
   },
 
   "navbar": {
