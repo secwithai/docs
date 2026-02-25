@@ -13,111 +13,101 @@ Boostrole allows Nitro boosters to create their own custom role in the server wi
 Before creating your role, you must enable boostrole.
 
 <CodeGroup>
-```javascript Syntax
-boostrole on
-boostrole on
+```javascript Syntax 
+boostrole on ```
 </CodeGroup>
+
 Disabling your boost role
 
 You can temporarily disable your boost role without deleting it.
 
-<CodeGroup> ```javascript Syntax boostrole off ```
-boostrole off
+<CodeGroup>
+```javascript Syntax 
+boostrole off ```
 </CodeGroup>
+
 Creating a boost role
 
 Create a role with custom colors, an optional emoji icon, and a name.
 
 <Info>You can use one or two colors to create gradient effects.</Info>
 
-<CodeGroup> ```javascript Syntax boostrole create <#color1> [#color2] [emoji] <name> ```
-boostrole create #ff0000 #0000ff ⭐ VIP
+<CodeGroup> 
+```javascript Syntax 
+boostrole create <#color1> [#color2] [emoji] <name> ```
 </CodeGroup>
+
 Renaming your boost role
 
-Change your role name anytime.
-
-<CodeGroup> ```javascript Syntax boostrole rename <newName> ```
-boostrole rename Super Booster
+<CodeGroup> 
+```javascript Syntax 
+boostrole rename <newName> ```
 </CodeGroup>
+
 Changing the role color
 
-Update your role color instantly.
-
-<CodeGroup> ```javascript Syntax boostrole color <#color> ```
-boostrole color #ff0000
+<CodeGroup> 
+```javascript Syntax 
+boostrole color <#color> ```
 </CodeGroup>
+
 Changing the role icon
-
-Add or update your role icon using emojis.
-
-<CodeGroup> ```javascript Syntax boostrole icon <emoji> ```
-boostrole icon ⭐
+<CodeGroup> 
+```javascript Syntax 
+boostrole icon <emoji> ```
 </CodeGroup>
-Removing your boost role
 
-Delete your boost role permanently.
-
-<CodeGroup> ```javascript Syntax boostrole remove ```
-boostrole remove
-</CodeGroup>
 Sharing your boost role
-
-You can allow other members to use your boost role.
-
 Share with a user
-<CodeGroup> ```javascript Syntax boostrole share <@user|userId> ```
-boostrole share @Hemanth
+<CodeGroup> 
+```javascript Syntax 
+boostrole share <@user|userId> ```
 </CodeGroup>
+
 Remove shared access
-<CodeGroup> ```javascript Syntax boostrole unshare <@user|userId> ```
-boostrole unshare @Hemanth
+<CodeGroup>
+```javascript Syntax 
+boostrole unshare <@user|userId> ```
 </CodeGroup>
-Set sharing limit
 
-Limit how many users can access your role.
-
-<CodeGroup> ```javascript Syntax boostrole sharelimit <number> ```
-boostrole sharelimit 5
+Remove shared access
+<CodeGroup> ```javascript Syntax 
+boostrole unshare <@user|userId> ```
 </CodeGroup>
+
 Server configuration (Admin)
 Set base role
-
-Controls where boost roles appear in role hierarchy.
-
-<CodeGroup> ```javascript Syntax boostrole baserole <@role|roleId> ```
-boostrole baserole @Boost Roles
+<CodeGroup> ```javascript Syntax 
+boostrole baserole <@role|roleId> ```
 </CodeGroup>
+
 Filter role names
-
-Block specific words from being used.
-
-<CodeGroup> ```javascript Syntax boostrole filter add <word> ```
-boostrole filter add badword
+<CodeGroup> ```javascript Syntax 
+boostrole filter add <word> ```
 </CodeGroup>
+
 Set boost message
-
-Customize boost announcements.
-
-<CodeGroup> ```javascript Syntax boostrole message <content> ```
-boostrole message Thanks for boosting {user}!
+<CodeGroup> ```javascript Syntax 
+boostrole message <content> ```
 </CodeGroup>
+
 Set boost channel
-
-Choose where boost messages are sent.
-
-<CodeGroup> ```javascript Syntax boostrole setchannel <#channel|channelId> ```
-boostrole setchannel #boosts
+<CodeGroup> ```javascript Syntax 
+boostrole setchannel <#channel|channelId> ```
 </CodeGroup>
+
 Preview boost message
-<CodeGroup> ```javascript Syntax boostrole testmessage ```
-boostrole testmessage
+<CodeGroup> ```javascript Syntax 
+boostrole testmessage ```
 </CodeGroup>
+
 Viewing boost roles
-<CodeGroup> ```javascript Syntax boostrole list ```
-boostrole list
+<CodeGroup> ```javascript Syntax 
+boostrole list ```
 </CodeGroup>
+
 View boostrole configuration
-<CodeGroup> ```javascript Syntax boostrole config ```
-boostrole config
-</CodeGroup> <Info> Boostrole is a premium Elite feature and requires an active premium tier. </Info> ```
+<CodeGroup> ```javascript Syntax 
+boostrole config ```
+</CodeGroup>
+<Info> Boostrole is a premium Elite feature and requires an active premium tier. </Info> ```
