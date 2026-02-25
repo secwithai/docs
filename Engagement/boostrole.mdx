@@ -8,7 +8,7 @@ icon: hands-holding-diamond
 
 Boostrole allows Nitro boosters to create their own custom role in the server with unique colors, icons, and names. These roles can also be shared with other members and managed with advanced configuration options.
 
-## Enabling your boost role
+### Enabling your boost role
 
 Before creating your role, you must enable boostrole.
 
@@ -18,17 +18,21 @@ boostrole on
 ```
 </CodeGroup>
 
-## Disabling your boost role
+### Setting the base role
 
-You can temporarily disable your boost role without deleting it.
+In order for the booster roles to work, you must set a base role. All booster roles will be placed under this role.
 
-<CodeGroup>
+<Tip>
+The base role should be a role which is above any roles with a color, otherwise the color won't be visible due to Discord's role hierarchy.
+</Tip>
+
+<CodeGroup> 
 ```javascript Syntax 
-boostrole off 
+boostrole baserole (@role|roleId) 
 ```
 </CodeGroup>
 
-## Creating a boost role
+### Creating a boost role
 
 Create a role with custom colors, an optional emoji icon, and a name.
 
@@ -40,7 +44,9 @@ boostrole create (#color1) [#color2] [emoji] (name)
 ```
 </CodeGroup>
 
-## Renaming your boost role
+## Customizing your booster role
+
+### Renaming your boost role
 
 <CodeGroup> 
 ```javascript Syntax 
@@ -48,7 +54,7 @@ boostrole rename (newName)
 ```
 </CodeGroup>
 
-## Changing the role color
+### Changing the role color
 
 <CodeGroup> 
 ```javascript Syntax 
@@ -56,14 +62,14 @@ boostrole color (#color)
 ```
 </CodeGroup>
 
-## Changing the role icon
+### Changing the role icon
 <CodeGroup> 
 ```javascript Syntax 
 boostrole icon (emoji) 
 ```
 </CodeGroup>
 
-## Sharing your boost role
+### Sharing your boost role
 Share with a user
 <CodeGroup> 
 ```javascript Syntax 
@@ -71,14 +77,14 @@ boostrole share (@user|userId)
 ```
 </CodeGroup>
 
-## Remove shared access
+### Remove shared access
 <CodeGroup>
 ```javascript Syntax 
 boostrole unshare (@user|userId) 
 ```
 </CodeGroup>
 
-## Remove shared access
+### Remove shared access
 <CodeGroup> 
 ```javascript Syntax 
 boostrole unshare (@user|userId) 
@@ -86,12 +92,6 @@ boostrole unshare (@user|userId)
 </CodeGroup>
 
 ## Server configuration (Admin)
-Set base role
-<CodeGroup> 
-```javascript Syntax 
-boostrole baserole (@role|roleId) 
-```
-</CodeGroup>
 
 Filter role names
 <CodeGroup> 
