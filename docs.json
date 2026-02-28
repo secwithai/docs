@@ -9,11 +9,11 @@
     "toggle": false
   },
 
-  "colors": {
-    "primary": "#5865F2",
-    "light": "#7289DA",
-    "dark": "#4752C4"
-  },
+"colors": {
+  "primary": "#00C8FF",
+  "light": "#33D6FF",
+  "dark": "#0099CC"
+},
 
   "favicon": "/logo/synq-light.png",
 
